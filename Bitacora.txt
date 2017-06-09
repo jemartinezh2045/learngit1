@@ -1,0 +1,411 @@
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 ~
+$ cd..
+bash: cd..: command not found
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 ~
+$ cd ..
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/Users
+$ cd ..
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c
+$ cd jav
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav
+$ cd learngit
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ cd trabajo
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit/trabajo (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Prueba_1.txt
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit/trabajo (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Prueba_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Basura_1.txt
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit/trabajo (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Prueba_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Basura_1.txt
+        Subdir_1/
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit/trabajo (master)
+$ git reset --hard HEAD
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit/trabajo (master)
+$ git reset --hard HEAD
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit/trabajo (master)
+$ cd ..
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git reset --hard HEAD
+HEAD is now at 439e72a se hizo un nuevo archivo dos.txt y un sudir1 y un archivo tres.txt
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Trabajo/
+        bitacora.rtf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git clean --force
+Removing bitacora.rtf
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Trabajo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    dos.txt
+        deleted:    uno.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git clean --force
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    dos.txt
+        deleted:    uno.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git commit
+On branch master
+Changes not staged for commit:
+        deleted:    dos.txt
+        deleted:    uno.txt
+
+no changes added to commit
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git commit -a
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    dos.txt
+        deleted:    uno.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git add Prueba_1.txt
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Prueba_1.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    dos.txt
+        deleted:    uno.txt
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git commit -m "Primera prueba"
+[master 504a5c9] Primera prueba
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Prueba_1.txt
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    dos.txt
+        deleted:    uno.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git reset --hard HEAD
+HEAD is now at 504a5c9 Primera prueba
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Prueba_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Apuntes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git add Prueba_1.txt
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Prueba_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Apuntes.txt
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git remote add origin https://github.com/jemartinezh2045/learngit1.git
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git remote -v
+origin  https://github.com/jemartinezh2045/learngit1.git (fetch)
+origin  https://github.com/jemartinezh2045/learngit1.git (push)
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': jemartinezh2045
+Counting objects: 11, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (11/11), 884 bytes | 0 bytes/s, done.
+Total 11 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/jemartinezh2045/learngit1.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Prueba_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Apuntes.txt
+        Readme.md.txt
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ cat readme
+cat: readme: No such file or directory
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Prueba_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Apuntes.txt
+        Readme.md
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git add readme.md
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Prueba_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Apuntes.txt
+        Readme.md
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git add Readme.md
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Prueba_1.txt
+        new file:   Readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Apuntes.txt
+
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git commit -m "nada"
+[master 25ad420] nada
+ 2 files changed, 9 insertions(+)
+ create mode 100644 Readme.md
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git push
+Counting objects: 4, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 508 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/jemartinezh2045/learngit1.git
+   504a5c9..25ad420  master -> master
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit (master)
+$ git clone ^C
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit
+$ git clone https://github.com/jemartinezh2045/learngit1.git
+fatal: could not create work tree dir 'learngit1': No such file or directory
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit
+$ pwd
+/c/jav/learngit
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit
+$ cd ..
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav
+$ ll
+total 0
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav
+$ pwd
+/c/jav
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav
+$ git clone https://github.com/jemartinezh2045/learngit1.git
+Cloning into 'learngit1'...
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 15 (delta 2), reused 14 (delta 1), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav
+$ git fecth
+git: 'fecth' is not a git command. See 'git --help'.
+
+Did you mean this?
+        fetch
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav
+$ git fetch
+fatal: Not a git repository (or any of the parent directories): .git
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav
+$ cd learngit1
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit1 (master)
+$ git fetch
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit1 (master)
+$ git pull
+Already up-to-date.
+
+desarrolloweb@AZMEXCURSOS04 MINGW64 /c/jav/learngit1 (master)
+$
